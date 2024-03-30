@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com Clone</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/youtube-logo.svg">
+      </div>
+
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+
+        <button class="search-button">
+          <img class="search-icon" src="icons/search.svg">
+          <div class="tooltip">Search</div>
+        </button>
+        <!-- put position absolute into position relative-->
+        <button class="voice-search-button">
+          <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+          <div class="tooltip">Search with your voice</div>
+        </button>
+
+      </div>
+
+      <div class="right-section">
+
+        <div class="upload-icon-container">
+          <img class="upload-icon" src="icons/upload.svg">
+          <div class="tooltip">Create</div>
+        </div>
+
+        <div class="youtube-apps-icon-container">
+          <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        
+        <div class="notifications-icon-container">
+          <img class="notifications-icon" src="icons/notifications.svg">
+          <div class="notifications-count">3</div>
+          <div class="tooltip">Notifications</div>          
+        </div>
+
+        <img class="current-user-picture" src="channel-pictures/rick.jepg.jpg">
+      </div>
+    </header>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <img src="icons/home.svg">
+        <div>Home</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/explore.svg">
+        <div>Explore</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/originals.svg">
+        <div>Originals</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/youtube-music.svg">
+        <div>YouTube Music</div>
+      </div>
+
+      <div class="sidebar-link">
+        <img src="icons/library.svg">
+        <div>Library</div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+  
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=jUPAQNED06c">
+              <img class="thumbnail" src="thumbnail/thumbnail-1.webp">
+            </a>
+            <div class="video-time">8:05</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@thisisRoy">
+                <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=jUPAQNED06c">
+                  D1 Stanford vs D3 Caltech 1v1 Basketball
+                </a>
+              </p>
+          
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@thisisRoy">
+                  Roy
+                </a>
+              </p>
+          
+              <p class="video-stats">
+                698k views &#183; 5 months ago
+              </p>
+            </div>
+    
+          </div>
+        </div>
+      
+          
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=pgeSGBwtHW8">
+              <img class="thumbnail" src="thumbnail/thumbnail-2.webp">
+            </a>
+            <div class="video-time">9:10</div> 
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@FaceDevStuff">
+                <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=pgeSGBwtHW8">
+                  I made my own Programming Language
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@FaceDevStuff">
+                  FaceDev
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                326k views &#183; 4 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="video-preview">
+    
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=5ky6vgQfU24">
+              <img class="thumbnail" src="thumbnail/thumbnail-3.webp">
+            </a>
+            <div class="video-time">2:50</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@ChristophRehage">
+                <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=5ky6vgQfU24">
+                  THE LONGEST WAY 1.0 - 350 days of hiking through China - TIMELAPSE
+                </a>
+              </p>
+          
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@ChristophRehage">
+                  Chirstoph Rehage
+                </a>
+              </p>
+          
+              <p class="video-stats">
+                51M views &#183; 15 years ago
+              </p>
+            </div>
+    
+          </div>
+        </div>
+      
+          
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=aOGMymXPgrk">
+              <img class="thumbnail" src="thumbnail/thumbnail-4.webp">
+            </a>
+            <div class="video-time">8:05</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@entreprenuership_opportunities">
+                <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=aOGMymXPgrk">
+                  Why 90% of Startup CEOs Are Falling | John Kim Senbird
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@entreprenuership_opportunities">
+                  EO
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                345k views &#183; 7 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+    
+        <div class="video-preview">
+    
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=h-grthPvpB0">
+              <img class="thumbnail" src="thumbnail/thumbnail-5.webp">
+            </a>
+            <div class="video-time">11:17</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@SuperSimpleDev">
+                <img class="profile-picture" src="channel-pictures/channel-5.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=h-grthPvpB0">
+                  How to become a software engineer with no experience
+                </a>
+              </p>
+          
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@SuperSimpleDev">
+                  SuperSimpleDev
+                </a>
+              </p>
+          
+              <p class="video-stats">
+                418k views &#183; 3 years ago
+              </p>
+            </div>
+    
+          </div>
+        </div>
+       
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=4bshv1iVFWw">
+              <img class="thumbnail" src="thumbnail/thumbnail-6.webp">
+            </a>
+            <div class="video-time">19:59</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@plaintextpackets">
+                <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=4bshv1iVFWw">
+                  How to Smuggle Data with Ping Part 2 - Windows Version
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@plaintextpackets">
+                  Plaintext Packets
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                1.3k views &#183; 1 day ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=9VlvbpXwLJs">
+              <img class="thumbnail" src="thumbnail/thumbnail-7.webp">
+            </a>
+            <div class="video-time">2:26:13</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@SimonSquibb">
+                <img class="profile-picture" src="channel-pictures/channel-7.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=9VlvbpXwLJs">
+                  30 Years of Business Knowledge in 2hrs 26mins
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@SimonSquibb">
+                  Simon Squibb
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                198 views &#183; 3 day ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=1CDBbEVBtBU">
+              <img class="thumbnail" src="thumbnail/thumbnail-8.webp">
+            </a>
+            <div class="video-time">9:50</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@marc-lou">
+                <img class="profile-picture" src="channel-pictures/channel-8.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=1CDBbEVBtBU">
+                  I built a startup in 31 hours (SaaS)
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@marc-lou">
+                  Marc Lou
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                98k views &#183; 2 weeks ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=65nfbW-27ps">
+              <img class="thumbnail" src="thumbnail/thumbnail-9.webp">
+            </a>
+            <div class="video-time">2:39</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@HugoCornellier">
+                <img class="profile-picture" src="channel-pictures/channel-9.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=65nfbW-27ps">
+                  AGE 12 TO MARRIED – I Took A Photo Every Day
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@HugoCornellier">
+                  Hugo Cornellier
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                258M views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=glgmavKWg3Y">
+              <img class="thumbnail" src="thumbnail/thumbnail-10.webp">
+            </a>
+            <div class="video-time">11:38</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@jamescross">
+                <img class="profile-picture" src="channel-pictures/channel-10.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=glgmavKWg3Y">
+                  Learn Web Development and Actually Get a Job
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@jamescross">
+                  James Cross
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                1.2M views &#183; 2 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=3d6DsjIBzJ4">
+              <img class="thumbnail" src="thumbnail/thumbnail-11.webp">
+            </a>
+            <div class="video-time">22:19</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@3blue1brown">
+                <img class="profile-picture" src="channel-pictures/channel-11.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=3d6DsjIBzJ4">
+                  Taylor series | Chapter 11, Essence of calculus
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@3blue1brown">
+                  3Blue1Brown
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                3.9M views &#183; 6 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <a href="https://www.youtube.com/watch?v=8pYgz4YlQnE">
+              <img class="thumbnail" src="thumbnail/thumbnail-12.webp">
+            </a>
+            <div class="video-time">9:30</div>
+          </div>
+    
+          <div class="video-info-grid">
+    
+            <div class="channel-picture">
+              <a href="https://www.youtube.com/@benjjjaamiinn">
+                <img class="profile-picture" src="channel-pictures/channel-12.jpeg">
+              </a>
+            </div>
+    
+            <div class="video-info">
+    
+              <p class="video-title">
+                <a class="link" href="https://www.youtube.com/watch?v=8pYgz4YlQnE">
+                  The Barclays Trading Strategy that Outperforms the Market
+                </a>
+              </p>
+      
+              <p class="video-author">
+                <a class="link" href="https://www.youtube.com/@benjjjaamiinn">
+                  Benjamin
+                </a>
+              </p>
+      
+              <p class="video-stats">
+                1.1M views &#183; 2 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  
+</html>
